@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Registration</h1>
+        <form id="studentForm">
+            <label>Name:</label>
+            <input type="text" id="name" required>
+            <br><br>
+            <label>Registration No. :</label>
+            <input type="text" id="regId" required>
+            <br><br>
+            <label>Department</label>
+            <select id="department" required>
+                <option value="">Select Department</option>
+                <option value="CSE">CSE</option>
+                <option value="CSE-AIML">CSE-AIML</option>
+                <option value="CSE-DS">CSE-DS</option>
+                <option value="IT">IT</option>
+            </select>
+            <br><br>
+            <label>Year: </label>
+            <select id="year" required>
+                <option value="">Select year</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="2">3</option>
+                <option value="4">4</option>
+            </select>
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Registration No.</th>
+                    <th>Department</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody id="studentTable">
+                
+            </tbody>
+        </table>
+        
+        <p id="message"></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
